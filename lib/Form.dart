@@ -16,7 +16,7 @@ class _PostMethod extends State<Form> {
   TextEditingController passwordController = TextEditingController();
   TextEditingController conformpasswordController = TextEditingController();
 
-  void postData() async{
+  void postData() async {
     String url = 'your_post_endpoint'; // Replace with your actual POST endpoint
 
     Map<String, String> headers = {
@@ -55,12 +55,6 @@ class _PostMethod extends State<Form> {
         child: Center(
           child: Column(
             children: [
-              TextFormField(
-                controller: usertypeController,
-                decoration: InputDecoration(
-                  labelText: 'User type',
-                ),
-              ),
               TextFormField(
                 controller: mobilenumberController,
                 decoration: InputDecoration(
